@@ -3,51 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Links</title>
     <style>
-        /* Modern Dark Theme */
-        body { margin: 0; background: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; }
-        
-        /* Navbar */
-        header { display: flex; align-items: center; padding: 20px 50px; background: rgba(30, 41, 59, 0.8); backdrop-filter: blur(10px); position: sticky; top: 0; }
-        .logo { width: 50px; height: 50px; background: #38bdf8; border-radius: 50%; margin-right: 20px; }
-        
-        /* Hero Section */
-        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-        
-        /* Content Section */
-        .section { padding: 80px 10%; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .card { background: #1e293b; padding: 30px; border-radius: 20px; border: 1px solid #334155; }
-        
-        iframe { border-radius: 15px; width: 100%; height: 300px; }
+        body { background: #0f172a; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .profile { text-align: center; margin-bottom: 30px; }
+        .logo { width: 120px; height: 120px; background: #38bdf8; border-radius: 50%; margin-bottom: 10px; }
+        .btn { display: block; width: 250px; padding: 15px; margin: 10px; background: #1e293b; color: white; text-decoration: none; border-radius: 8px; border: 1px solid #334155; transition: 0.3s; }
+        .btn:hover { background: #38bdf8; color: #000; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo"></div>
-        <h1>My Profile</h1>
-    </header>
-
-    <section class="hero">
-        <h1>Welcome to My Space</h1>
-        <p>Content Creator | Gamer | Tech Enthusiast</p>
-    </section>
-
-    <div class="section">
-        <div class="grid">
-            <div class="card">
-                <h2>Latest YouTube Video</h2>
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-            </div>
-            <div class="card">
-                <h2>Join My Discord</h2>
-                <p>Click below to join our community server!</p>
-                <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" style="display:inline-block; margin-top:20px; padding:15px 30px; background:#5865F2; color:white; text-decoration:none; border-radius:10px;">Join Discord</a>
-            </div>
-        </div>
+    <div class="profile">
+        <div class="logo"></div> <!-- Yahan apni image dal sakte hain -->
+        <h1>BRAINLESS</h1>
     </div>
+
+    <a href="https://youtube.com/@YOUR_CHANNEL" class="btn">YouTube</a>
+    <a href="https://discord.gg/YOUR_LINK" class="btn">Discord</a>
 
 </body>
 </html>
