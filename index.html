@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAINLESS100 | Minecraft Edition</title>
+    <title>BRAINLESS100 | Official</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --aqua: #00d4ff; --bg: #050a0f; }
         
         body { margin: 0; background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
 
-        /* Banner Section with Parallax Effect */
+        /* Banner section - Updated for your 2560x1440 image */
         .banner { 
             width: 100%; height: 400px; 
-            background: url('banner.png') center/cover; 
+            background: url('banner.png') no-repeat center center; 
+            background-size: cover; 
             border-bottom: 5px solid var(--aqua);
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             position: relative;
@@ -25,7 +26,6 @@
         
         h1 { font-family: 'Press Start 2P', cursive; color: var(--aqua); font-size: 2rem; margin: 15px 0; }
         
-        /* Smooth Reveal Animation */
         .reveal { opacity: 0; transform: translateY(50px); transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
