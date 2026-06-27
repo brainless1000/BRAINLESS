@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links</title>
+    <title>AASU OFFICIAL | Premium Profile</title>
     <style>
-        body { background: #0f172a; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-        .profile { text-align: center; margin-bottom: 30px; }
-        .logo { width: 120px; height: 120px; background: #38bdf8; border-radius: 50%; margin-bottom: 10px; }
-        .btn { display: block; width: 250px; padding: 15px; margin: 10px; background: #1e293b; color: white; text-decoration: none; border-radius: 8px; border: 1px solid #334155; transition: 0.3s; }
-        .btn:hover { background: #38bdf8; color: #000; }
+        :root { --primary-red: #ff4d4d; --bg-dark: #f0f0f0; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg-dark); padding: 20px; }
+        .main-card { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 25px; border-left: 10px solid var(--primary-red); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .stats-container { display: flex; justify-content: space-between; margin: 30px 0; }
+        .stat-box { background: #fff5f5; padding: 20px; border-radius: 15px; border: 1px solid var(--primary-red); width: 30%; text-align: center; }
+        .content-section { margin-top: 30px; border-top: 2px solid #eee; padding-top: 20px; }
+        .btn-action { display: block; width: 100%; padding: 20px; background: var(--primary-red); color: white; border: none; border-radius: 12px; font-size: 1.2rem; cursor: pointer; transition: 0.3s; margin-bottom: 10px; }
+        .btn-action:hover { transform: scale(1.02); background: #ff1a1a; }
+        /* Add CSS for responsiveness */
+        @media (max-width: 600px) { .stats-container { flex-direction: column; gap: 10px; } .stat-box { width: 100%; } }
     </style>
 </head>
 <body>
 
-    <div class="profile">
-        <div class="logo"></div> <!-- Yahan apni image dal sakte hain -->
-        <h1>BRAINLESS</h1>
-    </div>
+    <div class="main-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="background:var(--primary-red); color:white; padding:10px 20px; border-radius:20px;">AASU OFFICIAL</div>
+            <div style="width:80px; height:80px; border-radius:50%; background:#ccc;"></div>
+        </div>
 
-    <a href="https://youtube.com/@YOUR_CHANNEL" class="btn">YouTube</a>
-    <a href="https://discord.gg/YOUR_LINK" class="btn">Discord</a>
+        <h1>:-D</h1>
+
+        <div class="stats-container">
+            <div class="stat-box"><h3>1,240</h3><p>SUBS</p></div>
+            <div class="stat-box"><h3>313,210</h3><p>VIEWS</p></div>
+            <div class="stat-box"><h3>87</h3><p>VIDEOS</p></div>
+        </div>
+
+        <div class="content-section">
+            <h3>💻 MY SETUP</h3>
+            <p>Device: Infinix Note 30 5G | RAM: 8GB | ROM: 256GB</p>
+        </div>
+
+        <button class="btn-action">SYSTEM ONLINE - MOJO LAUNCHER</button>
+        <button class="btn-action">VISIT YOUTUBE CHANNEL</button>
+    </div>
 
 </body>
 </html>
